@@ -57,6 +57,7 @@ gem 'httparty', '~> 0.21.0'
 # Use Packwerk for organizing code
 gem 'packwerk', '~> 2.2'
 gem 'packs-rails', '~> 0.0.2'
+gem 'graphwerk'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

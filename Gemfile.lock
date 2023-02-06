@@ -99,6 +99,11 @@ GEM
     ffi (1.15.5)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    graphwerk (1.2.1)
+      activesupport
+      packwerk
+      ruby-graphviz
+      sorbet-runtime
     hashdiff (1.0.1)
     httparty (0.21.0)
       mini_mime (>= 1.0.0)
@@ -214,6 +219,8 @@ GEM
       rspec-mocks (~> 3.11)
       rspec-support (~> 3.11)
     rspec-support (3.11.1)
+    ruby-graphviz (1.2.5)
+      rexml
     sassc (2.4.0)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -265,6 +272,7 @@ DEPENDENCIES
   bootsnap
   bootstrap (~> 5.2)
   debug
+  graphwerk
   httparty (~> 0.21.0)
   importmap-rails
   jbuilder
