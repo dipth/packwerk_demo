@@ -68,8 +68,16 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
+    ast (2.4.2)
     autoprefixer-rails (10.4.7.0)
       execjs (~> 2)
+    better_html (2.0.1)
+      actionview (>= 6.0)
+      activesupport (>= 6.0)
+      ast (~> 2.0)
+      erubi (~> 1.4)
+      parser (>= 2.4)
+      smart_properties
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
@@ -79,6 +87,7 @@ GEM
       sassc-rails (>= 2.0.0)
     builder (3.2.4)
     concurrent-ruby (1.2.0)
+    constant_resolver (0.2.0)
     crack (0.4.5)
       rexml
     crass (1.0.6)
@@ -128,6 +137,25 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.14.1-arm64-darwin)
       racc (~> 1.4)
+    packs (0.0.6)
+      sorbet-runtime
+    packs-rails (0.0.2)
+      activesupport
+      packs
+      railties
+    packwerk (2.2.2)
+      activesupport (>= 5.2)
+      ast
+      better_html
+      bundler
+      constant_resolver (>= 0.2.0)
+      parallel
+      parser
+      sorbet-runtime (>= 0.5.9914)
+      zeitwerk (>= 2.6.1)
+    parallel (1.22.1)
+    parser (3.2.0.0)
+      ast (~> 2.4.1)
     popper_js (2.11.6)
     public_suffix (5.0.1)
     puma (5.6.5)
@@ -194,6 +222,8 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    smart_properties (1.17.0)
+    sorbet-runtime (0.5.10648)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -238,6 +268,8 @@ DEPENDENCIES
   httparty (~> 0.21.0)
   importmap-rails
   jbuilder
+  packs-rails (~> 0.0.2)
+  packwerk (~> 2.2)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
   rails-controller-testing (~> 1.0)
