@@ -67,4 +67,7 @@ VCR.configure do |config|
   config.cassette_library_dir = Rails.root.join("spec/vcr/cassettes")
   config.hook_into :webmock
   config.configure_rspec_metadata!
+
+  # Filter out sensitive data
+  config.filter_sensitive_data('{{mapbox_token}}') { Rails.application.credentials.mapbox.token }
 end
