@@ -1,0 +1,9 @@
+<h1>What is the weather like in:</h1>
+<p>
+  <%= form_tag weather_index_path, method: :post do %>
+    <div class="input-group mb-3">
+      <%= text_field_tag :location, '', class: 'form-control form-control-lg' %>
+      <%= submit_tag "Go!", class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+</p>

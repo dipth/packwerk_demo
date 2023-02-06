@@ -1,0 +1,27 @@
+<h1><%= @place_name&.titleize %></h1>
+
+<ul class="list-group mb-3">
+  <li class="list-group-item">
+    <strong>Weather:</strong>
+    <%= @weather_type %>
+  </li>
+
+  <li class="list-group-item">
+    <strong>Temperature:</strong>
+    <%= @temperature %>°C
+  </li>
+
+  <li class="list-group-item">
+    <strong>Wind Speed:</strong>
+    <%= @wind_speed %> m/s
+  </li>
+
+  <li class="list-group-item">
+    <strong>Wind Direction:</strong>
+    <%= @wind_direction %>
+  </li>
+</ul>
+
+<p>
+  <%= link_to "Back", root_path, class: "btn btn-primary" %>
+</p>
